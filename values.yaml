@@ -1,0 +1,12 @@
+frontend:
+  image: ervmapa/frontend:latest
+  port: 5000
+  backendUrl: http://backend-service/update
+
+backend:
+  image: ervmapa/backend:latest
+  port: 5001
+
+redis:
+  image: redis:latest
+  port: 6379
